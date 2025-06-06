@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
     <style>
-    .form-container {
+      .form-container {
         width: 400px;
-        margin: auto ;
+        margin: auto;
         padding: 50px;
         border: 7px solid green;
         border-radius: 10px;
         background-color: #f9f9f9;
         text-align: center;
         margin-top: 20px;
-    }
+      }
 
-    .form {
+      .form {
         text-align: center;
         color: black;
         font-family: Arial, sans-serif;
-    }
+      }
 
-    input {
+      input {
         width: 90%;
         padding: 10px;
         margin: 12px 12px;
         border: 1px solid grey;
         border-radius: 5px;
-    }
+      }
 
-    .form button {
+      .form button {
         background-color: green;
         color: white;
         border: none;
@@ -38,9 +38,9 @@
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
-    }
+      }
 
-    .social-login button {
+      .social-login button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,62 +53,84 @@
         font-size: 14px;
         cursor: pointer;
         background-color: white;
-    }
+      }
 
-    .social-login button img {
+      .social-login button img {
         width: 20px;
         height: 20px;
-    }
-    .tabs {
+      }
+      .tabs {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
         gap: 20px;
         cursor: pointer;
-    }
-    .tab {
+      }
+      .tab {
         font-size: 22px;
-        font-weight:bold;
-        color:black;
-
-    }
-    .tab.active {
-        color:green
-    }
-    .form-content {
+        font-weight: bold;
+        color: black;
+      }
+      .tab.active {
+        color: green;
+      }
+      .form-content {
         display: none;
-    }
-    .form-content.active {
+      }
+      .form-content.active {
         display: block;
-    }   
-</style>
-</head> 
+      }
+    </style>
+  </head>
+  <body>
     <div class="form-container">
-        <div class="tabs">
-      <div id="loginTab" class="tab ">Login</div>
-      <div id="registerTab" class="tab active">Register</div>
+      <div class="tabs">
+        <div id="loginTab" class="tab">Login</div>
+        <div id="registerTab" class="tab active">Register</div>
+      </div>
+      <form id="loginForm" class="form form-content" style="color: green">
+        <p>Enter your email and password to login.</p>
+        <div><input type="email" placeholder="Enter your email address" /></div>
+        <div><input type="password" placeholder="Password" /></div>
+        <div><button type="submit">Login</button></div>
+        <p>Or enter with</p>
+      </form>
+      <form
+        id="RegistrationForm"
+        class="form form-content active"
+        style="color: green"
+      >
+        <p>Enter your email and password to register.</p>
+        <div><input type="text" placeholder="Name" /></div>
+        <div><input type="email" placeholder="Enter your email address" /></div>
+        <div><input type="password" placeholder="Password" /></div>
+        <div><input type="password" placeholder="Confirm Password" /></div>
+        <div><button type="submit">Register</button></div>
+        <p>Or enter with</p>
+      </form>
+      <div class="social-login">
+        <div>
+          <button>
+            <img
+              src="images/google.svg"
+              alt="google"
+              width="20"
+              height="20"
+            />Continue with Google
+          </button>
+        </div>
+
+        <div>
+          <button>
+            <img
+              src="images/facebook.svg"
+              alt="facebook"
+              width="20"
+              height="20"
+            />Continue with Facebook
+          </button>
+        </div>
+      </div>
     </div>
-        <form id="loginForm" class="form form-content " action="color: green;">
-            <p>Enter your email and password to login.</p>
-            <div><input type="email" placeholder="Enter your email address"></div>
-            <div><input type="password" placeholder="Password"></div>
-            <div><button type="submit">Login</button></div>
-             <p>Or enter with</p>
-            </form> 
-    <form id="RegistrationForm" class="form form-content active" action="color: green;">
-    <p>Enter your email and password to register.</p>
-    <div><input type="text" placeholder="Name"></div>
-    <div><input type="email" placeholder="Enter your email address"></div>
-    <div><input type="password" placeholder="Password"></div>
-    <div><input type="password" placeholder="Confirm Password"></div>
-    <div><button type="submit">Register</button></div>
-    <p>Or enter with</p>
-        </form>
-        <form class="social-login">  
-    <div><button><img src="images/google.svg" alt="google" width="20" height="20">Continue with Google</button></div>
-    
-    <div><button><img src="images/facebook.svg" alt="facebook" width="20" height="20">Continue with Facebook</button></div>
-    </form>
-</div>
-</body>
+  </body>
 </html>
