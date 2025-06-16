@@ -86,141 +86,124 @@ input {
     display: none;
     color: green;
 }
-/* header styles */
 
-header{
-    font-size: 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 0px;
+    border-bottom: 1px solid rgba(70, 163, 88, 50%);
+    padding-top: 30px;
+    padding-bottom: 17px;
+    margin-bottom: 12px;
+
+}
+
+.logo,
+.header_nav,
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.btn {
+    min-width: 100px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: 1px solid #46A358;
+    border-radius: 6px;
+    padding: 6px 10px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px;
-    width: 100;
-}
-.header_logo  {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    padding-left: 10%
-}
-.logout_img {
-    height: auto;
-    display: inline-block;
-    inline-size: 20px;
-    vertical-align: center;
-    margin: 0px 2px;
-}
-
-.shop_nav {
-    margin: 25px;
-   width: calc(100% - 250px); 
-   font-size: 16px;
-   display: inline-block;
-   display: flex;
-   gap: 20px;
-}
-
-.home_page,
-.shop_page,
-.plant_page,
-.blogs_page {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
 }
 
-.login_page {
-    width: 100px;
-    font-size: 16px;
-    display: inline-block;   
+.btn:hover {
+    background: darkgreen;
+    border-color: #3D8B4A;
+}
+
+.btn:hover img {
+    display: none;
+}
+
+.btn img,
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header_nav {
+    width: calc(100% - 250px);
+}
+
+.header_nav_list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.header_nav_list li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header_nav_list li a {
     text-decoration: none;
-    vertical-align: middle;
-    padding:8px;
-    background-color: green;
-    border-radius: 10px;
-    color: white;
-    margin-right: 5%;
-    
+    color: #3D3D3D;
 }
 
-.login_page:hover {
-    background-color: darkgreen;
+/*banner styles*/
+.banner {
+    padding: 30px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+
 }
-.shop_nav li {
+
+.banner_text,
+.banner_img {
     display: inline-block;
-}
-
-/*intro styles*/
-
-.intro {
-font-size: 0;
-}
-.intro_text {
-    text-align: left;
-    font-size: 40px;
-    color: black;
-    margin-top: 20px;
-    width: 50%;
-    display: inline-block;
+    width: 60%;
     vertical-align: middle;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-.intro_img {
-    height: 400px;
-    object-fit: cover;
-    margin-top: 5px;
-    width: 50%;
-    display:inline-block;
-    height: auto;
-    vertical-align: middle;
-    padding-bottom: 5%;
 }
 
-.big_plant {
-    width: 500px;
+.banner_img {
+    text-align: center;
+    width: 38%;
 }
 
-.small_plant {
-    position: relative;
-    left: 155px;
-    bottom: 5px;
-    width: 135px;
-    height: auto;
-    display: inline-block;
-    object-fit: cover;
-    margin: 10px auto;
-    pointer-events: none;
+.title_add {
+    font-size: 16px;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.banner p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.banner .btn {
+    text-transform: uppercase;
+    padding: 10px 10px;
 }
 
 .Planet {
-    color: green;
-    line-height: 1.5;
-}
-.welcome {
-    font-size: 16px;
-    color: black;
-    text-align: left;
-    margin-top: 20px;
-}
-.intr_txt {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.shop_button {
-    display: inline-block;
-    background-color: green;
-    color: white;
-    padding: 10px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
-.shop_button:hover {
-    background-color: darkgreen;
+    color: #3D8B4A
 }
