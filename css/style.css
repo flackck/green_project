@@ -86,10 +86,6 @@ input {
     display: none;
     color: green;
 }
-* {
-    box-sizing: border-box;
-}
-
 /* header styles */
 
 header{
@@ -99,18 +95,25 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
-    white-space: nowrap;
+    width: 100;
 }
 .header_logo  {
-    width: 150px;
     display: inline-block;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     padding-left: 10%
 }
+.logout_img {
+    height: auto;
+    display: inline-block;
+    inline-size: 20px;
+    vertical-align: center;
+    margin: 0px 2px;
+}
 
 .shop_nav {
+    margin: 25px;
    width: calc(100% - 250px); 
    font-size: 16px;
    display: inline-block;
@@ -123,7 +126,6 @@ header{
 .plant_page,
 .blogs_page {
     text-decoration: none;
-    margin: 70px;
     color: black;
     font-size: 16px;
 }
@@ -139,6 +141,7 @@ header{
     border-radius: 10px;
     color: white;
     margin-right: 5%;
+    
 }
 
 .login_page:hover {

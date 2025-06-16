@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <div class="tabs">
+      <div id="loginTab" class="tab">Login</div>
+      <div id="registerTab" class="tab active">Register</div>
+    </div>
+    <form id="loginForm" class="form form-content">
+      <p>Enter your email and password to login.</p>
+      <div><input type="email" placeholder="Enter your email address" /></div>
+      <div><input type="password" placeholder="Password" /></div>
+      <div><button type="submit">Login</button></div>
+      <p>Or enter with</p>
+    </form>
+    <form id="RegistrationForm" class="form form-content active">
+      <p>Enter your email and password to register.</p>
+      <div><input type="text" placeholder="Name" /></div>
+      <div><input type="email" placeholder="Enter your email address" /></div>
+      <div><input type="password" placeholder="Password" /></div>
+      <div><input type="password" placeholder="Confirm Password" /></div>
+      <div><button type="submit">Register</button></div>
+      <p>Or enter with</p>
+    </form>
+    <div class="social-login">
+      <div>
+        <button>
+          <img src="images/google.svg" alt="google" width="20" height="20" />Continue with Google
+        </button>
+      </div>
+
+      <div>
+        <button>
+          <img src="images/facebook.svg" alt="facebook" width="20" height="20" />Continue with Facebook
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
