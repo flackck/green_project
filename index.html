@@ -2,49 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registration</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="form-container">
-    <div class="tabs">
-      <div id="loginTab" class="tab">Login</div>
-      <div id="registerTab" class="tab active">Register</div>
+  <header class="header">
+    <div class="container">
+      <strong class="logo">
+        <img src="images/logo.svg" alt="greenshop">
+      </strong>
+      <nav class="header_nav">
+        <ul class="header_nav_list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Plant Care</a></li>
+          <li><a href="">Blogs</a></li>
+        </ul>
+      </nav>
+      <button class="btn">
+        <img src="images/logout.svg" alt="Logout">
+        <span>Login</span>
+      </button>
     </div>
-    <form id="loginForm" class="form form-content">
-      <p>Enter your email and password to login.</p>
-      <div><input type="email" placeholder="Enter your email address" /></div>
-      <div><input type="password" placeholder="Password" /></div>
-      <div><button type="submit">Login</button></div>
-      <p>Or enter with</p>
-    </form>
-    <form id="RegistrationForm" class="form form-content active">
-      <p>Enter your email and password to register.</p>
-      <div><input type="text" placeholder="Name" /></div>
-      <div><input type="email" placeholder="Enter your email address" /></div>
-      <div><input type="password" placeholder="Password" /></div>
-      <div><input type="password" placeholder="Confirm Password" /></div>
-      <div><button type="submit">Register</button></div>
-      <p>Or enter with</p>
-    </form>
-    <div class="social-login">
-      <div>
-        <button>
-          <img src="images/google.svg" alt="google" width="20" height="20" />Continue with Google
-        </button>
-      </div>
-
-      <div>
-        <button>
-          <img src="images/facebook.svg" alt="facebook" width="20" height="20" />Continue with Facebook
-        </button>
-      </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="banner">
+        <div class="banner_text"><span class="title_add">Welcome to GreenShop</span>
+          <h1>Let’s Make a Better <span class="planet">Planet</span></h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
+            unique Urban
+            Jungle. Order your favorite plants!</p>
+          <a href="" class="btn">SHOP NOW</a>
+        </div>
+        <div class="banner_img">
+          <img src="images/two_plants.png" alt="">
+        </div>
+      </section>
     </div>
-  </div>
+  </main>
+  <footer></footer>
 </body>
 
 </html>

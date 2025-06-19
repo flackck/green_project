@@ -27,7 +27,7 @@ input {
     background-color: green;
     color: white;
     border: none;
-    padding: 10px 150px;
+    padding: 10px 115px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -78,11 +78,137 @@ input {
 .form-content.active {
     display: block;
 }
+
 #login-form {
     display: block;
     color: green;
 }
+
 #register-form {
     display: none;
     color: green;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 0px;
+    border-bottom: 1px solid rgba(70, 163, 88, 50%);
+    padding-top: 30px;
+    padding-bottom: 17px;
+    margin-bottom: 12px;
+
+}
+
+.logo,
+.header_nav,
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.btn {
+    min-width: 100px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: 1px solid #46A358;
+    border-radius: 6px;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: darkgreen;
+    border-color: #3D8B4A;
+}
+
+.btn:hover img {
+    display: none;
+}
+
+.btn img,
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header_nav {
+    width: calc(100% - 250px);
+}
+
+.header_nav_list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.header_nav_list li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header_nav_list li a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+.header_nav_list li a:hover {
+    color: #46A358;
+}
+
+/*banner styles*/
+.banner {
+    padding: 30px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+
+}
+
+.banner_text,
+.banner_img {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.banner_img {
+    text-align: center;
+    width: 38%;
+}
+
+.title_add {
+    font-size: 16px;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.banner p {
+    font-size: 14px;
+}
+
+.banner .btn {
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+.planet {
+    color: #3D8B4A
 }
