@@ -1,3 +1,94 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+.body {
+    margin: 0;
+    font-family: 'Cera Pro';
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3d3d3d
+}
 .form-container {
     width: 400px;
     margin: auto;
@@ -15,7 +106,7 @@
     font-family: Arial, sans-serif;
 }
 
-input {
+.input {
     width: 90%;
     padding: 10px;
     margin: 12px 12px;
@@ -69,6 +160,7 @@ input {
 
 .tab.active {
     color: green;
+    font-weight: 700;
 }
 
 .form-content {
@@ -109,6 +201,11 @@ input {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
+    font-weight: 700;
+}
+
+.header_nav_list .active {
+    color: #46A358;
 }
 
 .logo {
@@ -124,6 +221,7 @@ input {
     padding: 6px 10px;
     text-align: center;
     text-decoration: none;
+    font-weight: 700px;
 }
 
 .btn:hover {
@@ -217,9 +315,7 @@ input {
     width: 200px;
     float: left;
     padding: 20px;
-    background: #f5f5f5;
-    height: 100vh;
-    box-sizing: border-box;
+    background: #f5f5f5; 
 }
 
 .sidebar h3 {
@@ -232,9 +328,21 @@ input {
 }
 
 .sidebar li {
-    margin: 10px 0;
+    margin: 20px 0;
     color: #333;
     cursor: pointer;
+    text-decoration: none;
+}
+.sidebar li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.sidebar li a:hover {
+    background-color: #d3ffd3;
+    color: green;
 }
 
 .sidebar li.active {
@@ -288,7 +396,7 @@ input {
 }
 
 .products {
-    text-align: center;
+    
 }
 
 .product {
@@ -304,4 +412,36 @@ input {
 
 .product .price {
     color: green;
-    font-weight: bold; }
+    font-weight: bold;
+    max-width: 700px; 
+}
+
+/*styles for pages*/
+.pages {
+    list-style-type: none;
+    margin: 0 0 50px;
+    padding: 0;
+}
+
+.pages li {
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.pages .active,
+.pages a:hover {
+    background-color: #46A358;
+    color: #fff;
+}
+
+.pages a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    padding-top: 8px;
+    text-decoration: none;
+    color: inherit;
+}
