@@ -10,26 +10,27 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <strong class="logo">
-        <img src="images/logo.svg" alt="greenshop">
-      </strong>
-      <nav class="header_nav">
-        <ul class="header_nav_list">
-          <li class="active"><a href="">Home</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Plant Care</a></li>
-          <li><a href="">Blogs</a></li>
-        </ul>
-      </nav>
-      <button class="btn">
-        <img src="images/logout.svg" alt="Logout">
-        <span>Login</span>
-      </button>
-    </div>
-  </header>
   <main>
+    <header class="header">
+      <div class="container">
+        <strong class="logo">
+          <img src="images/logo.svg" alt="greenshop">
+        </strong>
+        <nav class="header_nav">
+          <ul class="header_nav_list">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Plant Care</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </nav>
+        <button class="btn">
+          <img src="images/logout.svg" alt="Logout">
+          <span>Login</span>
+        </button>
+      </div>
+    </header>
+
     <div class="container">
     </div>
     <section class="banner">
@@ -79,11 +80,20 @@
     </section>
     <div class="products">
       <div class="product">
-        <img src="images/plnt_139.svg" alt="Plant_1">
-        <p>Barberton Daisy</p>
-        <p class="price">$119.00</p>
+        <div class="product_img_wrap"><img src="images/plnt_139.svg" alt="Plant_1">
+
+          <div class="product_icons">
+            <img src="images/shopping.svg" alt="">
+            <img src="images/heart.svg" alt="">
+            <img src="images/search.svg" alt="">
+          </div>
+          <div class="badge"><img src="images/sale.svg" alt=""></div>
+        </div>
       </div>
+      <p>Barberton Daisy</p>
+      <p class="price">$119.00 <span class="old_price">$229.00</span></p>
     </div>
+
     <ul class="pages">
       <li class="active"><a href="">1</a></li>
       <li><a href="">2</a></li>
