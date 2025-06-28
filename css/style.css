@@ -297,6 +297,7 @@ body {
     text-transform: uppercase;
     font-size: 70px;
     margin: 0px;
+    font-weight: 900;
 }
 
 .banner p {
@@ -310,6 +311,12 @@ body {
 
 .planet {
     color: #3D8B4A
+}
+
+.sidebar::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .sidebar {
@@ -346,9 +353,9 @@ body {
     color: green;
 }
 
-.sidebar li.active {
+.sidebar li.active a {
     font-weight: bold;
-    color: green;
+    color: #46A358;   
 }
 
 .sidebar img {
@@ -362,13 +369,11 @@ body {
 .main {
     margin-left: 200px;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .top-menu {
     overflow: hidden;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
@@ -410,6 +415,7 @@ body {
     width: 200px;
     margin: 15px;
     vertical-align: top;
+    background: #f5f5f5;
 }
 
 .products_img_wrap {
@@ -485,18 +491,19 @@ body {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    text-align: center;
 }
 
 .pages li {
     margin-left: 10px;
     display: inline-block;
-    text-align: center;
 }
 
 .pages .active,
 .pages a:hover {
     background-color: #46A358;
     color: #fff;
+    border-radius: 4px;
 }
 
 .pages a {
@@ -505,7 +512,6 @@ body {
     display: inline-block;
     border-radius: 4px;
     border: 1px solid #e5e5e5;
-    padding-top: 8px;
     text-decoration: none;
     color: inherit;
 }
