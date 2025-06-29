@@ -429,6 +429,7 @@ body {
 
 
 .products {
+    position: relative;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -437,42 +438,43 @@ body {
 }
 
 .product {
-    background: #fff;
     padding: 10px;
     width: calc(33.333% - 20px);
     background:#FBFBFB;
     display: block;
-    position: relative;
+    position:relative;
+    line-height: 0.6;
     }
 
 .products_img_wrap {
-    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .products_img_wrap img {
     display: block;
     transition: transform 0.3s ease;
     width: 250px;
+    position: relative;
 }
 
-.product_icons {
-position:relative
-}
 
 .product_icons_list {
     position:absolute;
-    left: -120px;
-    bottom: -35px;
+    left: 0px;
+    bottom: 10px;
     display: flex;
     list-style: none;
     padding-left: 0;
     right: 0;
     justify-content: center;
     opacity: 0;
+    transition: opacity 0.3s ease;
+    gap: 10px;
+    margin: 0px;
 }
 
 .product_icons_list li {
@@ -493,17 +495,12 @@ position:relative
     
 }
 
-.product_icons img {
-    
-}
-
 
 .sale {
-height: 16px;
-width: 70px;
+max-width: 63px;
 background:#46A358;
 color: #fff;
-padding: 10px;
+padding: 5px;
 top: 0;
 left: 0;
 position: absolute;
