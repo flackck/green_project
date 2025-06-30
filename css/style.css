@@ -199,7 +199,6 @@ body {
     padding-top: 30px;
     padding-bottom: 17px;
     margin-bottom: 12px;
-
 }
 
 .logo,
@@ -213,6 +212,80 @@ body {
 
 .header_nav_list .active {
     color: #46A358;
+}
+
+.header_nav_list > li {
+    position: relative;
+}
+
+.header_submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding:12px;
+    display: none;
+    text-align: left;
+    background: #EDF6EE;
+    padding-top: 12px;
+}
+
+.header_submenu a {
+    display: block;
+    padding: 5px;
+    position: relative;
+}
+
+.header_submenu li:hover>a {
+    background: #d3ffd3;
+    
+    
+}   
+
+.header_submenu li {
+    background: #EDF6EE;
+    position: relative;
+}
+
+.header_nav_list>li:hover .header_submenu {
+    display: block;
+}
+
+.header_submenu> li {
+    position: relative;
+}
+
+.second_submenu {
+    position: absolute;
+    left: 100%;
+    padding-top: 12p;
+    display: none;
+    text-align: left;
+    width: 200px;
+    padding: 12px;
+    top: 0;
+}
+
+.header_submenu>li:has(ul)::after {
+content: "";
+width: 8px;
+height: 8px;
+border: 2px solid #000;
+display: inline-block;
+position: absolute;
+right: 13px;
+top: 13px;
+transform: rotate(45deg);
+border-width: 0 0 1px 1px;
+left: 100%;
+}
+
+.header_submenu li:hover > a:after {
+   border-width: 0 0 2px 2px;
+   border-color: white;
+}
+
+.header_submenu> li:hover .second_submenu {
+    display: block;
 }
 
 .logo {
@@ -267,10 +340,11 @@ body {
     text-decoration: none;
     color: #3D3D3D;
     font-weight: 400;
+    display: block;
 }
 
 .header_nav_list li a:hover {
-    color: #46A358;
+    color:green
 }
 
 .header_nav_list li.active a {
@@ -444,6 +518,7 @@ body {
     display: block;
     position:relative;
     line-height: 0.6;
+    background: #FBFBFB;
     }
 
 .products_img_wrap {
@@ -475,6 +550,7 @@ body {
     transition: opacity 0.3s ease;
     gap: 10px;
     margin: 0px;
+    
 }
 
 .product_icons_list li {
@@ -483,12 +559,16 @@ body {
     height: 20px;
     text-align: center;
     border-radius: 5px;
+    background: white;
 }
 
 .product:hover .product_icons_list {
     opacity: 1;
 }
-
+.product:hover {
+    border-top: #46A358 2px solid;
+    top: 0;
+}
 .product .price {
     color: green;
     font-weight: bold;
