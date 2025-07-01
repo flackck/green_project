@@ -529,7 +529,7 @@ border-width: 0 0 1px 1px;
     display: block;
     position:relative;
     line-height: 0.6;
-    background: #FBFBFB;
+    border-top: 2px solid transparent;
     }
 
 .products_img_wrap {
@@ -561,6 +561,8 @@ border-width: 0 0 1px 1px;
     transition: opacity 0.3s ease;
     gap: 10px;
     margin: 0px;
+    width: 35px;
+    height: 35px;
     
 }
 
@@ -602,8 +604,7 @@ align-items: center;
 }
 
 .price {
-    color: #46A358;
-    font-weight: bold;
+    
 }
 
 .old_price {
