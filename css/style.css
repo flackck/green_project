@@ -209,6 +209,10 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
+.header_nav_list {
+    border-bottom: #46A358 2px transparent;
+}
+
 
 .header_nav_list .active {
     color: #46A358;
@@ -218,17 +222,16 @@ body {
     position: relative;
 }
 
+
 .header_submenu {
     position: absolute;
     top: 100%;
     left: 0;
     display: none;
     text-align: left;
-    background: #EDF6EE;
-    padding-top: 12px;
     width: 178px;
     list-style: none;
-    padding: 0;
+    padding: 25px 0 0 0;
 }
 
 .header_submenu a {
@@ -253,7 +256,6 @@ body {
 
 .header_submenu li {
     background: #EDF6EE;
-    position: relative;
 }
 
 .header_nav_list>li:hover .header_submenu {
@@ -262,6 +264,7 @@ body {
 
 .header_submenu> ul {
     position: relative;
+    padding-top: 12px;
 }
 
 .second_submenu {
@@ -270,11 +273,11 @@ body {
     padding-top: 12p;
     display: none;
     text-align: left;
-    width: 200px;
     padding: 0 0 12px 0;
-    top: 0;
+    top: 25px;
     width: 250px;
     list-style: none;
+    min-height: 100%;
 }
 
 .header_submenu>li:has(ul)>a::after {
@@ -287,11 +290,11 @@ position: absolute;
 right: 13px;
 top: 13px;
 transform: rotate(45deg);
-border-width: 0 0 1px 1px;
+border-width: 1px 1px 0 0;
 }
 
 .header_submenu li:hover > a:after {
-   border-width: 0 0 2px 2px;
+   border-width: 0 0 1px 1px;
    border-color: white;
 }
 
@@ -352,16 +355,26 @@ border-width: 0 0 1px 1px;
     color: #3D3D3D;
     font-weight: 400;
     display: block;
+    border-bottom: 2px solid transparent;
+        color: #333;
+        transition: all 0.3s ease;
 }
 
 .header_nav_list li a:hover {
     color:green
 }
 
-.header_nav_list li.active a {
+.header_nav_list li a:hover {
     color: black;
     font-weight: 700;
     border-bottom: #46A358 2px solid;
+    
+}
+
+.header_nav_list li a.active {
+    color: black;
+        font-weight: 700;
+        border-bottom: #46A358 2px solid;
 }
 
 /*banner styles*/
@@ -561,15 +574,12 @@ border-width: 0 0 1px 1px;
     transition: opacity 0.3s ease;
     gap: 10px;
     margin: 0px;
-    width: 35px;
-    height: 35px;
-    
 }
 
 .product_icons_list li {
     margin: 0 10px;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     border-radius: 5px;
     background: white;
@@ -603,9 +613,7 @@ justify-content: center;
 align-items: center;
 }
 
-.price {
     
-}
 
 .old_price {
     text-decoration: line-through;
