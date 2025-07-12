@@ -174,6 +174,67 @@
      content: "\eaca";
  }
 
+@keyframes bounsing {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        bow-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn_login {
+    animation: bounsing 0.5s ease-out 1s infinite normal both;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+ gap: 10px;
+    align-items: center;
+}
+
+.loading_point {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    animation: jump 0.8s linear  infinite alternate both;
+}
+
+.loading_point:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.loading_point:nth-child(3) {
+    animation-delay: 0.25s;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        transform: translateY(0);
+    }
+    
+    100% {
+        bottom: 50px;
+        transform: translateY(0);
+    }
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -307,7 +368,8 @@ body {
     color: green;
 }
 
-.btn a {
+.btn a,
+.btn_login a {
     text-decoration: none;
     color: white;
 }
@@ -327,7 +389,8 @@ body {
 
 .logo,
 .header_nav,
-.btn {
+.btn,
+.btn_login {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
@@ -430,7 +493,8 @@ border-width: 1px 1px 0 0;
     width: 150px;
 }
 
-.btn {
+.btn,
+.btn_login {
     min-width: 100px;
     background-color: #46A358;
     color: #FFFFFF;
@@ -442,7 +506,8 @@ border-width: 1px 1px 0 0;
     
 }
 
-.btn:hover {
+.btn:hover,
+.btn_login:hover {
     background: darkgreen;
     border-color: #3D8B4A;
 }
