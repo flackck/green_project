@@ -307,6 +307,11 @@ body {
     color: green;
 }
 
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1088,3 +1093,17 @@ align-items: center;
     text-decoration: none;   
 }
 
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #46A358;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: darkgreen;
+    transform: rotatex(45deg);
+}
